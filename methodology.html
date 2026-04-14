@@ -1,0 +1,345 @@
+<!DOCTYPE HTML>
+<!--
+	Strata by HTML5 UP — extended page for IT BA Work Methodology
+-->
+<html>
+	<head>
+		<title>Work Methodology | Low Tzu Yu (Tiffany)</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			/* Mind map image section */
+			.mindmap-wrapper {
+				background: #f7f7f7;
+				border: solid 2px #efefef;
+				border-radius: 0.35em;
+				padding: 1.5em;
+				margin: 0 0 3em 0;
+				text-align: center;
+			}
+			.mindmap-wrapper img {
+				max-width: 100%;
+				border-radius: 0.35em;
+				display: inline-block;
+			}
+			.mindmap-wrapper .caption {
+				font-size: 0.85em;
+				color: #b2b2b2;
+				margin-top: 1em;
+				margin-bottom: 0;
+			}
+
+			/* Phase cards */
+			.phase-grid {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				gap: 1.5em;
+				margin: 2em 0 3em 0;
+			}
+			@media screen and (max-width: 736px) {
+				.phase-grid {
+					grid-template-columns: 1fr;
+				}
+			}
+			.phase-card {
+				border: solid 2px #efefef;
+				border-radius: 0.35em;
+				padding: 1.5em;
+				position: relative;
+			}
+			.phase-card .phase-number {
+				display: inline-block;
+				background: #49bf9d;
+				color: #fff;
+				font-size: 0.75em;
+				font-weight: 400;
+				padding: 0.2em 0.75em;
+				border-radius: 2em;
+				margin-bottom: 0.75em;
+				letter-spacing: 0.05em;
+			}
+			.phase-card h3 {
+				font-size: 1em;
+				color: #555;
+				margin: 0 0 0.75em 0;
+			}
+			.phase-card ul {
+				list-style: none;
+				padding: 0;
+				margin: 0;
+			}
+			.phase-card ul li {
+				padding: 0.3em 0 0.3em 1.25em;
+				font-size: 0.85em;
+				line-height: 1.5em;
+				color: #a2a2a2;
+				border-top: solid 1px #f4f4f4;
+				position: relative;
+			}
+			.phase-card ul li:first-child {
+				border-top: 0;
+				padding-top: 0;
+			}
+			.phase-card ul li::before {
+				content: '';
+				display: block;
+				width: 5px;
+				height: 5px;
+				background: #49bf9d;
+				border-radius: 50%;
+				position: absolute;
+				left: 0;
+				top: 0.65em;
+			}
+			.phase-card ul li:first-child::before {
+				top: 0.4em;
+			}
+
+			/* Tools row */
+			.tools-row {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 0.6em;
+				margin: 1.5em 0 2em 0;
+			}
+			.tool-tag {
+				display: inline-block;
+				border: solid 1.5px #49bf9d;
+				color: #49bf9d;
+				font-size: 0.78em;
+				padding: 0.25em 0.9em;
+				border-radius: 2em;
+				text-decoration: none;
+				transition: background 0.2s, color 0.2s;
+			}
+			.tool-tag:hover {
+				background: #49bf9d;
+				color: #fff;
+				border-color: #49bf9d;
+			}
+
+			/* Principles */
+			.principles-row {
+				display: grid;
+				grid-template-columns: repeat(3, 1fr);
+				gap: 1.25em;
+				margin: 2em 0 1em 0;
+			}
+			@media screen and (max-width: 736px) {
+				.principles-row {
+					grid-template-columns: 1fr;
+				}
+			}
+			.principle-item {
+				text-align: center;
+				padding: 1.25em 1em;
+				border: solid 2px #efefef;
+				border-radius: 0.35em;
+			}
+			.principle-item .icon-wrap {
+				font-size: 1.6em;
+				color: #49bf9d;
+				margin-bottom: 0.4em;
+			}
+			.principle-item h4 {
+				font-size: 0.95em;
+				color: #555;
+				margin: 0 0 0.4em 0;
+			}
+			.principle-item p {
+				font-size: 0.8em;
+				line-height: 1.5em;
+				margin: 0;
+				color: #a2a2a2;
+			}
+
+			/* Back link */
+			.back-link {
+				margin-bottom: 2em;
+				display: block;
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+		<header id="header">
+			<div class="inner">
+				<a href="index.html" class="image avatar"><img src="images/agile.png" alt="" /></a>
+				<h1><strong>Here's how I approach every project:</strong><br /></h1>
+				<h4>Understand ● Analyze ● Design ● Test ● Deliver</h4>
+			</div>
+		</header>
+
+		<!-- Main -->
+		<div id="main">
+
+			<section id="methodology-intro">
+				<a href="index.html" class="back-link button small icon solid fa-arrow-left">Back to Home</a>
+				<header class="major">
+					<h3>My Work Methodology</h3>
+					<p>My approach aligns with <b>AGILE</b> practices.</br>
+						Translating business needs into clear, actionable requirements and delivering them through continuous stakeholder collaboration.</p>
+				</header>
+			</section>
+
+			<!-- Mind Map Image -->
+			<section id="mindmap">
+				<h3>Work Mind Map</h3>
+				<div class="mindmap-wrapper">
+					<!-- Replace the src below with your actual mind map image path -->
+					<img src="images/mindmap.png" alt="Analyst Work Methodology Mind Map" />
+					<p class="caption">I like to map out my thoughts before starting work—it helps clear my mind, clarify the steps needed, and improve planning. Working smart helps me achieve more with less effort.</p>
+				</div>
+			</section>
+
+			<!-- Methodology Phases -->
+			<section id="phases">
+				<h3>Methodology Breakdown</h3>
+				<div class="phase-grid">
+
+					<div class="phase-card">
+						<span class="phase-number">Phase 1</span>
+						<h3>Discovery &amp; Stakeholder Engagement</h3>
+						<ul>
+							<li>Conduct stakeholder interviews and workshops to surface pain points</li>
+							<li>Map current-state processes using BPMN or swimlane diagrams</li>
+							<li>Define project scope, objectives, and success criteria</li>
+							<li>Identify key data sources, systems, and integration points</li>
+						</ul>
+					</div>
+
+					<div class="phase-card">
+						<span class="phase-number">Phase 2</span>
+						<h3>Requirements Gathering &amp; Analysis</h3>
+						<ul>
+							<li>Elicit functional and non-functional requirements</li>
+							<li>Document requirements in BRDs, user stories, or use cases</li>
+							<li>Prioritise requirements using MoSCoW or stakeholder alignment sessions</li>
+							<li>Validate requirements with sign-off from business owners</li>
+						</ul>
+					</div>
+
+					<div class="phase-card">
+						<span class="phase-number">Phase 3</span>
+						<h3>Data Analysis &amp; Exploration</h3>
+						<ul>
+							<li>Query and profile source data using SQL to assess quality and completeness</li>
+							<li>Identify data gaps, inconsistencies, and transformation needs</li>
+							<li>Design data models and define entity relationships</li>
+							<li>Document data dictionaries and lineage for downstream consumers</li>
+						</ul>
+					</div>
+
+					<div class="phase-card">
+						<span class="phase-number">Phase 4</span>
+						<h3>Solution Design &amp; Prototyping</h3>
+						<ul>
+							<li>Design data pipelines and ETL/ELT transformation logic</li>
+							<li>Build Power BI prototype dashboards for early stakeholder feedback</li>
+							<li>Define KPIs, metrics, and visualisation standards</li>
+							<li>Collaborate with developers to translate requirements into system specs</li>
+						</ul>
+					</div>
+
+					<div class="phase-card">
+						<span class="phase-number">Phase 5</span>
+						<h3>Testing &amp; Validation</h3>
+						<ul>
+							<li>Write and execute UAT test cases aligned to acceptance criteria</li>
+							<li>Validate data accuracy by reconciling reports against source systems</li>
+							<li>Log, track, and retest defects through resolution</li>
+							<li>Facilitate sign-off with business stakeholders before go-live</li>
+						</ul>
+					</div>
+
+					<div class="phase-card">
+						<span class="phase-number">Phase 6</span>
+						<h3>Delivery, Monitoring &amp; Iteration</h3>
+						<ul>
+							<li>Support system deployment and data migration activities</li>
+							<li>Create end-user documentation and conduct training sessions</li>
+							<li>Monitor dashboard usage and gather post-launch feedback</li>
+							<li>Continuously refine solutions based on evolving business needs</li>
+						</ul>
+					</div>
+
+				</div>
+			</section>
+
+			<!-- Tools & Technologies -->
+			<section id="tools">
+				<h2>Tools &amp; Technologies</h2>
+				<p>Across each phase, I work with a range of tools to deliver reliable, scalable data solutions.</p>
+				<div class="tools-row">
+					<span class="tool-tag">Power BI / Tableau</span>
+					<span class="tool-tag">SQL Server</span>
+					<span class="tool-tag">DAX</span>
+					<span class="tool-tag">Excel</span>
+					<span class="tool-tag">Report Builder</span>
+					<span class="tool-tag">Python</span>
+					<span class="tool-tag">Power Platforms</span>
+					<span class="tool-tag">SharePoint</span>
+					<span class="tool-tag">MS Teams</span>
+					<span class="tool-tag">Visio</span>
+					<span class="tool-tag">Figma (Wireframing)</span>
+				</div>
+			</section>
+
+			<!-- Core Principles -->
+			<section id="principles">
+				<h2>Core Principles</h2>
+				<p>How I approach every engagement — from a small report fix to a full system rollout.</p>
+				<div class="principles-row">
+					<div class="principle-item">
+						<div class="icon-wrap"><span class="icon solid fa-users"></span></div>
+						<h4>Business First</h4>
+						<p>Understanding business needs by starting with the “why” before defining the “how,” ensuring that technology supports—rather than disrupts—business operations.</p>
+					</div>
+					<div class="principle-item">
+						<div class="icon-wrap"><span class="icon solid fa-database"></span></div>
+						<h4>Data Integrity</h4>
+						<p>Accurate, consistent, and trustworthy data is non-negotiable. I validate at every stage and document data lineage clearly.</p>
+					</div>
+					<div class="principle-item">
+						<div class="icon-wrap"><span class="icon solid fa-comments"></span></div>
+						<h4>Clear Communication</h4>
+						<p>I translate technical complexity into language stakeholders understand — bridging the gap between IT and business teams.</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- CTA -->
+			<section id="cta" style="margin-top: 3em;">
+				<ul class="actions">
+					<li><a href="index.html" class="button">Back to Home</a></li>
+					<li><a href="mailto:tiffanylowty06@gmail.com" class="button primary icon solid fa-envelope">Get In Touch</a></li>
+				</ul>
+			</section>
+
+		</div>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<div class="inner">
+				<ul class="icons">
+					<li><a href="https://www.linkedin.com/in/tzu-yu-l-0a7703163/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+					<li><a href="mailto:tiffanylowty06@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+				</ul>
+				<ul class="copyright">
+					<li>&copy; Low Tzu Yu (Tiffany)</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+			</div>
+		</footer>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.poptrox.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
