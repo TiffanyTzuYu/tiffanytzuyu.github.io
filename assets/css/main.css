@@ -3354,3 +3354,152 @@ input, select, textarea {
   margin-left: 4px;
   font-size: 0.8em;
 }
+
+
+/* ── Work card reset ── */
+.work-item {
+  margin: 0 0 2.5em 0;
+}
+ 
+/* ── Clickable card wrapper ── */
+.work-card-link {
+  display: block;
+  text-decoration: none;
+  border-bottom: none;
+  color: inherit;
+  outline-offset: 4px;
+}
+.work-card-link:hover {
+  color: inherit !important;
+}
+ 
+/* ── Card shell ── */
+.work-card {
+  border: 2px solid #efefef;
+  border-radius: 0.6em;
+  overflow: hidden;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
+  background: #fff;
+}
+.work-card-link:hover .work-card {
+  border-color: #49bf9d;
+  box-shadow: 0 8px 28px rgba(73, 191, 157, 0.13);
+  transform: translateY(-3px);
+}
+ 
+/* ── Thumbnail area ── */
+.work-card-thumb {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+  background: #f0f0f0;
+}
+.work-card-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.35s ease, filter 0.35s ease;
+  border-radius: 0;  /* card clips it */
+}
+.work-card-link:hover .work-card-thumb img {
+  transform: scale(1.05);
+  filter: brightness(0.45);
+}
+ 
+/* ── Hover overlay ── */
+.work-card-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+.work-card-link:hover .work-card-overlay {
+  opacity: 1;
+}
+.overlay-icon {
+  font-size: 2em;
+  color: #fff;
+  line-height: 1;
+  font-weight: 300;
+}
+.overlay-label {
+  font-size: 0.78em;
+  font-weight: 400;
+  color: #fff;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: rgba(73, 191, 157, 0.85);
+  padding: 0.35em 1em;
+  border-radius: 2em;
+}
+ 
+/* ── Card body ── */
+.work-card-body {
+  padding: 1.1em 1.25em 1.25em;
+}
+ 
+/* ── Badge row ── */
+.work-card-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4em;
+  margin-bottom: 0.6em;
+}
+.work-badge {
+  font-size: 0.68em;
+  padding: 0.22em 0.75em;
+  border-radius: 2em;
+  background: #f0fdf8;
+  border: 1.5px solid #49bf9d;
+  color: #49bf9d;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+.work-badge--gamify {
+  background: #fdf5f0;
+  border-color: #e8a87c;
+  color: #c07a45;
+}
+.work-badge--hr {
+  background: #f0f4fd;
+  border-color: #7a9ce8;
+  color: #4566c0;
+}
+.work-badge--sales {
+  background: #fdf0f5;
+  border-color: #e87aaa;
+  color: #c04575;
+}
+ 
+/* ── Card title & description ── */
+.work-card-body h3 {
+  font-size: 0.95em;
+  color: #555;
+  margin: 0 0 0.35em 0;
+  line-height: 1.4em;
+  transition: color 0.2s ease;
+}
+.work-card-link:hover .work-card-body h3 {
+  color: #49bf9d;
+}
+.work-card-body p {
+  font-size: 0.8em;
+  line-height: 1.6em;
+  color: #a2a2a2;
+  margin: 0;
+}
+ 
+/* ── Responsive: stack on small screens ── */
+@media screen and (max-width: 736px) {
+  .work-card-thumb {
+    aspect-ratio: 16 / 9;
+  }
+}
